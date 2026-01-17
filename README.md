@@ -1,9 +1,9 @@
-# Student REST API – Postman Project
+# Student Management REST API Automation Framework (Postman)
 
 This project is a **Postman-based REST API collection** designed to manage student information.  
 It demonstrates API testing, request chaining, and validation using Postman.
 
-## 📌 Project Overview
+## Project Overview
 
 The Student REST API allows you to:
 - Create student records
@@ -15,18 +15,18 @@ The Student REST API allows you to:
 
 This project was created and tested entirely using **Postman**.
 
-## 🔗 API Documentation
+## API Documentation
 
 The complete Postman-generated API documentation is available here:
 
 https://documenter.getpostman.com/view/13082503/2s93Xwz4Az
 
-## 📁 Repository Contents
-├── StudentDetails.postman_collection.json
-├── StudentDetails.postman_environment.json
+## Repository Contents
+├── StudentDetails.postman_collection.json \
+├── StudentDetails.postman_environment.json \
 ├── README.md
 
-## 🚀 API Operations Covered
+## API Operations Covered
 
 - Create Student
 - Get Student by ID
@@ -37,7 +37,7 @@ https://documenter.getpostman.com/view/13082503/2s93Xwz4Az
 - Delete Student
 - Automated Test Validations
 
-## 🧪 How to Run the Project in Postman
+## How to Run the Project in Postman
 
 1. Open **Postman**
 2. Click **Import**
@@ -47,47 +47,47 @@ https://documenter.getpostman.com/view/13082503/2s93Xwz4Az
 4. Select the imported environment
 5. Run requests individually or use the **Collection Runner**
 
-## 🛠️ Run Using Newman (CLI)
+## Run Using Newman (CLI)
 
 ### Prerequisites
 - Node.js installed
 - Newman installed globally
 
 Install Newman:
-```bash
-npm install -g newman
-Run the Collection
+```npm install -g newman```
 
-newman run StudentDetails.postman_collection.json \
--e StudentDetails.postman_environment.json
-npm install -g newman-reporter-htmlextra
+### Run the Collection
+``` newman run StudentDetails.postman_collection.json``` \
+```-e StudentDetails.postman_environment.json```
 
-newman run StudentDetails.postman_collection.json \
--e StudentDetails.postman_environment.json \
--r cli,htmlextra
+### Generate HTML Report
+```npm install -g newman-reporter-htmlextra```
 
-Environment Variables
+```newman run StudentDetails.postman_collection.json``` \
+```-e StudentDetails.postman_environment.json``` \
+```-r cli,htmlextra```
 
+### Environment Variables
 Make sure the following variables are properly set in the environment:
 
-baseUrl
+- `baseUrl`
 
-studentId
+- `studentId`
 
-Any authentication tokens (if applicable)
+- Any authentication tokens
 
-🧑‍💻 Tools & Technologies Used
+### Tools & Technologies Used
 
-Postman
+- Postman
 
-REST API
+- REST API
 
-Newman
+- Newman
 
-JavaScript (Postman Tests)
+- JavaScript (Postman Tests)
 
-Node.js
+- Node.js
 
-📄 License
+## License
 
 This project is open-source and available for learning and demonstration purposes.
