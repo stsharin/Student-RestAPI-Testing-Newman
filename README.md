@@ -1,81 +1,59 @@
-# Student-RestAPI-Testing-Newman
-## How to run this project
-- Clone this project
-- Open with Postman / Command Shell
-- Run Command:  
-```console 
-newman run StudentDetails.postman_collection.json -e StudentDetails.postman_environment.json 
-```
-- Run Command for Report: 
-```console 
-newman run StudentDetails.postman_collection.json -e StudentDetails.postman_environment.json -r cli,htmlextra
-```
-## Technology used:
-- Postman
-- Newman
-## Prerequisite:
-- Jdk
-- Node Js
-- Newman
-- Html Report Library
-## Newman and Report Installation Process:
-- Newman Install Command:
-```console
-npm install -g newman-reporter-htmlextra
-```
-- Newman Html Report Install Command:
-```console
-npm install -g newman-reporter-htmlextra
-```
-## API Documentation:
-- https://documenter.getpostman.com/view/13082503/2s93Xwz4Az
-## Test case list:
-1. ### Create Student
-	> Create Data Sets Using the Dynamic Random Variables.
-2. ### Verify Crated Student Details
-	> In the test case you need to validate the following field values:
- 	1. > First Name
- 	2. > Middle Name
- 	3. > Last Name
- 	4. > Date of Birth
-3. ### Update Student
-	> In the test case you need to validate the following field values:
- 	1. > Only Message
-4. ### Verify Updated Student Details
-	> In the test case you need to validate the following field values:
-	1. > First Name
- 	2. > Middle Name
-	3. > Last Name
- 	4. > Date of Birth
-5. ### Create Technical skills Create Student Address
-	> In the test case you need to validate the following field values:
-	1. > Only Message
-6. ### Create a Student Address
-	> In the test case you need to validate the following field values:
-	1. > Only Message
-7. ### Get the Student's Full Details
-	> In the test case you need to validate the following field values:
-	1. > First Name
-	2. > Middle Name
-	3. > Last Name
-	4. > Date of Birth
-	5. > Language
-	6. > Year Of Experience
-	7. > Last Used Date
-	8. > House Number
-	9. > City
-	10. > State
-	11. > Country
-	12. > Std Code
-	13. > Home Address
-	14. > Mobile
-8. ### Delete Specific Student
-	> In the test case you need to validate the following field values:
-	1. > Only Message
+# Student REST API – Postman Project
 
+This project is a **Postman-based REST API collection** designed to manage student information.  
+It demonstrates API testing, request chaining, and validation using Postman.
 
-## Newman Report Summary:
-![Newman Report Summary](https://github.com/stsharin/Student-RestAPI-Testing-Newman/assets/37589935/8a893698-05fc-40d3-88df-b2d7ce8cce82)
+## 📌 Project Overview
 
+The Student REST API allows you to:
+- Create student records
+- Verify created student details
+- Update student information
+- Add technical skills and address details
+- Retrieve full student details
+- Delete a student record
 
-![Newman Report Summary](https://github.com/stsharin/Student-RestAPI-Testing-Newman/assets/37589935/953b6fbb-deb4-4209-b150-a1f614425f28)
+This project was created and tested entirely using **Postman**.
+
+## 🔗 API Documentation
+
+The complete Postman-generated API documentation is available here:
+
+https://documenter.getpostman.com/view/13082503/2s93Xwz4Az
+
+## 📁 Repository Contents
+├── StudentDetails.postman_collection.json
+├── StudentDetails.postman_environment.json
+├── README.md
+
+## 🚀 API Operations Covered
+
+- Create Student
+- Get Student by ID
+- Update Student Details
+- Add Technical Skills
+- Add Address Details
+- Get Full Student Profile
+- Delete Student
+- Automated Test Validations
+
+## 🧪 How to Run the Project in Postman
+
+1. Open **Postman**
+2. Click **Import**
+3. Import the following files:
+   - `StudentDetails.postman_collection.json`
+   - `StudentDetails.postman_environment.json`
+4. Select the imported environment
+5. Run requests individually or use the **Collection Runner**
+
+## 🛠️ Run Using Newman (CLI)
+
+### Prerequisites
+- Node.js installed
+- Newman installed globally
+
+Install Newman:
+```bash
+npm install -g newman
+Run the Collection
