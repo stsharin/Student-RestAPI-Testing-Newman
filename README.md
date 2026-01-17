@@ -57,3 +57,37 @@ Install Newman:
 ```bash
 npm install -g newman
 Run the Collection
+
+newman run StudentDetails.postman_collection.json \
+-e StudentDetails.postman_environment.json
+npm install -g newman-reporter-htmlextra
+
+newman run StudentDetails.postman_collection.json \
+-e StudentDetails.postman_environment.json \
+-r cli,htmlextra
+
+Environment Variables
+
+Make sure the following variables are properly set in the environment:
+
+baseUrl
+
+studentId
+
+Any authentication tokens (if applicable)
+
+🧑‍💻 Tools & Technologies Used
+
+Postman
+
+REST API
+
+Newman
+
+JavaScript (Postman Tests)
+
+Node.js
+
+📄 License
+
+This project is open-source and available for learning and demonstration purposes.
