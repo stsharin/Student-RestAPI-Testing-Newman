@@ -88,6 +88,11 @@ Make sure the following variables are properly set in the environment:
 
 - Node.js
 
+## Newman Report Summary
+
+<img width="696" height="710" alt="285681724-8a893698-05fc-40d3-88df-b2d7ce8cce82" src="https://github.com/user-attachments/assets/3f02b065-43fe-4116-aad8-7b37c201a90c" />
+<img width="696" height="409" alt="285681734-953b6fbb-deb4-4209-b150-a1f614425f28" src="https://github.com/user-attachments/assets/5ab3486c-98c8-4907-976c-5a850eac8fa2" />
+
 ## License
 
 This project is open-source and available for learning and demonstration purposes.
